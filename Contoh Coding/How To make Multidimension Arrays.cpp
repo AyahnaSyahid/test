@@ -27,7 +27,7 @@ void Variant1(){
       }
   }
 }
-void Variant2(){
+void Variant2(){ // 2D Arrays
     int **table = (int **) malloc (5 * sizeof(int*));
     for(int r=0; r < 5; r++){
         table[r] = (int *) malloc (5 * sizeof(int));
@@ -42,7 +42,7 @@ void Variant2(){
         cout << table[r][c] << endl;
     }
 }
-void Variant3(){
+void Variant3(){ // 3D Arrays
     int counter = 0;
     int ***triplet = (int ***) malloc (sizeof(int**) * 100);
     for(int fst = 0; fst < 100; fst++){
@@ -58,7 +58,7 @@ void Variant3(){
         cout << triplet[99][29] << endl;
     }
 }
-void Variant4(){
+void Variant4(){ // 4D Arrays
     long ****Quadron = (long ****) malloc (sizeof(long ***) * 50);
     for(long one = 0; one < 50; one++){
         Quadron[one] = (long ***) malloc (sizeof(long **) * 50);
